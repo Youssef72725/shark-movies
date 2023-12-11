@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (2).css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Shark Movies</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- Your profile navbar content here -->
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Shark Movies</h1>
+            </div>
+            <div class="menu-container">
+                <!-- Add menu items relevant to the profile page -->
+                <ul class="menu-list">
+                    <a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/home.html"><li  class="menu-list-item active">Home</li></a>
+                    <a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/movies.html"><li  class="menu-list-item">Movies</li></a>
+                    <a href=""><li class="menu-list-item">Series</li></a>
+                    <a href=""><li class="menu-list-item">Popular</li></a>
+                    <a href=""><li class="menu-list-item">Trends</li></a>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/profile.html"><span class="profile-text">Profile</span></a> 
+                    <i class="fas fa-caret-down"></i>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <!-- Your profile sidebar content here -->
+        
+        <a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/profile.html"><i class="left-menu-icon fas fa-user"></i></a>
+       <a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/home.html"><i class="left-menu-icon fas fa-home"></i></a>
+       <a href=""><i class="left-menu-icon fas fa-users"></i></a> 
+       <a href=""><i class="left-menu-icon fas fa-bookmark"></i></a> 
+       <a href=""><i class="left-menu-icon fas fa-tv"></i></a> 
+       <a href=""><i class="left-menu-icon fas fa-hourglass-start"></i></a>
+       <a href=""><a href="file:///C:/Users/YOUSEF%20MOUSTAFA/Desktop/project%20SA/subscription%20(2).html"><i class="left-menu-icon fas fa-shopping-cart"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="profile-container">
+            <h2>User Profile</h2>
+            <!-- Your profile content here -->
+            <div class="info-item">
+                <label for="profilePicture">Profile Picture:</label>
+                <img src="M11.jpg.webp" alt="Profile Picture" class="profile-image">
+                <input type="file" id="editProfilePicture" name="editProfilePicture" accept="image/*" style="display: none;">
+            </div>
+            <div class="profile-info">
+                <div class="info-item">
+                    <label for="username">Username:</label>
+                    <p id="usernameDisplay">mo salah</p>
+                    <input type="text" id="editUsername" name="editUsername" style="display: none;">
+                </div>
+                <div class="info-item">
+                    <label for="email">Email:</label>
+                    <p id="emailDisplay">mo salah@example.com</p>
+                    <input type="text" id="editEmail" name="editEmail" style="display: none;">
+                </div>
+                <div class="info-item">
+                    <label for="age">Age:</label>
+                    <p id="ageDisplay">30</p>
+                    <input type="text" id="editAge" name="editAge" style="display: none;">
+                </div>
+                <!-- Add more profile information items as needed -->
+            </div>
+            <button class="edit-profile-btn" onclick="toggleEditMode()">Edit Profile</button>
+            <form class="edit-form">
+                <div class="form-group">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername" name="newUsername">
+                </div>
+                <div class="form-group">
+                    <label for="newEmail">New Email:</label>
+                    <input type="text" id="newEmail" name="newEmail">
+                </div>
+                <div class="form-group">
+                    <label for="newAge">New Age:</label>
+                    <input type="text" id="newAge" name="newAge">
+                </div>
+                <button type="button" onclick="saveChanges()">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Add your existing script content here
+    </script>
+</body>
+
+</html>
